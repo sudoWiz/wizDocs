@@ -5,8 +5,8 @@ sudo dnf remove firefox -y
 sudo dnf update -y
 
 ## Uncomment next 2 lines for Nvidia drivers
-##dnf install akmod-nvidia \
-##xorg-x11-drv-nvidia-cuda \
+#dnf install akmod-nvidia \
+#xorg-x11-drv-nvidia-cuda \
 
 sudo dnf install \
 git \
@@ -76,7 +76,4 @@ echo > ~/Desktop/to-do.md "- [ ] dark mode
 - [ ] sign into obsidian
 - [ ] mount black and blue
 - [ ] enable WoWOL
-<<<<<<< HEAD
 - [ ] connect wizDocs github"
-=======
->>>>>>> 406a4bc94fc91bdc6fb58dff2a5e004f702eec8f
