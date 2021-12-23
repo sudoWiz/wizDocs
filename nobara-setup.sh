@@ -27,10 +27,9 @@ sudo systemctl enable --now syncthing@USER.service
 pip3 install --user gnome-extensions-cli
 
 ## Gnome Shell Extensions
-gnome-extensions-cli install 517 906 989 1262 1319 2087 2890
+gnome-extensions-cli install 517 906 1262 1319 2087 2890
 # 517 Caffeine
 # 906 Sound Input & Output Device Chooser
-# 989 Syncthing Icon
 # 1262 Bing Wallpaper
 # 1319 GSConnect
 # 2087 Desktop Icons NG (DING)
