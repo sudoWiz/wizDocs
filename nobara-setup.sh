@@ -18,7 +18,7 @@ fish \
 python3-pip \
 util-linux-user -y
 
-chsh -s wiz /usr/bin/fish
+chsh -s /usr/bin/fish
 sudo chsh -s /usr/bin/fish
 
 sudo systemctl enable --now syncthing@USER.service
