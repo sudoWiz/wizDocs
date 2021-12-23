@@ -9,6 +9,7 @@ sudo dnf update -y
 ##xorg-x11-drv-nvidia-cuda \
 
 sudo dnf install \
+git \
 xrdp \
 gnome-tweaks \
 micro \
@@ -24,14 +25,18 @@ sudo chsh -s /usr/bin/fish
 sudo systemctl enable --now syncthing@USER.service
 
 ## pip3
-pip3 install protonup
+pip3 install --user gnome-extensions-cli
 
 ## Gnome Shell Extensions
-gnome-extensions install 517 # Caffeine
-gnome-extensions install 906 # Sound Input & Output Device Chooser
-gnome-extensions install 1262 # Bing Wallpaper
-gnome-extensions install 1319 # GSConnect
-gnome-extensions install 2890 # Tray Icons: Reloaded
+gnome-extensions-cli install 517 906 989 1262 1319 2087 2890
+# 517 Caffeine
+# 906 Sound Input & Output Device Chooser
+# 989 Syncthing Icon
+# 1262 Bing Wallpaper
+# 1319 GSConnect
+# 2087 Desktop Icons NG (DING)
+# 2890 Tray Icons: Reloaded
+
 ## Flatpak 
 ## Add Flathub Repo
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y
@@ -41,22 +46,26 @@ flatpak install flathub org.mozilla.firefox \
 com.github.Eloston.UngoogledChromium \
 com.spotify.Client \
 com.bitwarden.desktop \
-flathub org.videolan.VLC \
+org.videolan.VLC \
 org.remmina.Remmina \
 org.gnome.Epiphany \
 org.telegram.desktop \
-flathub com.leinardi.gwe \
+om.leinardi.gwe \
 org.gabmus.hydrapaper \
 md.obsidian.Obsidian \
 com.github.tchx84.Flatseal \
 org.gnome.Extensions \
-flathub org.jitsi.jitsi-meet \
+org.jitsi.jitsi-meet \
 com.github.wwmm.easyeffects \
+net.davidotek.pupgui2 \
+de.haeckerfelix.Fragments \
+com.bitstower.Markets \
+org.gnome.World.PikaBackup \
+org.gnome.gitlab.YaLTeR.VideoTrimmer \
+com.uploadedlobster.peek -y
 
 ## to-do list (manual steps)
-touch ~/Desktop/to-do.md
-cat > ~/Desktop/to-do.md
-- [ ] dark mode
+echo > ~/Desktop/to-do.md "- [ ] dark mode
 - [ ] mount game drive on boot
 - [ ] sign into steam
 - [ ] configure game drive in steam
@@ -67,3 +76,4 @@ cat > ~/Desktop/to-do.md
 - [ ] sign into obsidian
 - [ ] mount black and blue
 - [ ] enable WoWOL
+- [ ] connect wizDocs github"
