@@ -74,5 +74,4 @@ echo > ~/Desktop/to-do.md "- [ ] dark mode
 - [ ] syncthing documents sync
 - [ ] sign into obsidian
 - [ ] mount black and blue
-- [ ] enable WoWOL
-- [ ] connect wizDocs github"
+- [ ] enable WoWOL"
