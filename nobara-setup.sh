@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# test edit
 ## DNF Packages
 sudo dnf remove firefox -y
 sudo dnf update -y
