@@ -9,7 +9,6 @@ sudo dnf update -y
 #xorg-x11-drv-nvidia-cuda \
 
 sudo dnf install \
-git \
 xrdp \
 gnome-tweaks \
 micro \
@@ -39,7 +38,7 @@ gnome-extensions-cli install 517 906 989 1262 1319 2087 2890
 
 ## Flatpak 
 ## Add Flathub Repo
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 ## Install Flatpaks
 flatpak install flathub org.mozilla.firefox \
