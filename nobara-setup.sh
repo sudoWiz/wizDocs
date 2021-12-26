@@ -14,6 +14,7 @@ gnome-tweaks \
 micro \
 neofetch \
 syncthing \
+tilix \
 fish \
 python3-pip \
 util-linux-user -y
@@ -35,7 +36,7 @@ gnome-extensions-cli install 517 906 1262 1319 2087 2890
 # 2087 Desktop Icons NG (DING)
 # 2890 Tray Icons: Reloaded
 
-## Flatpak 
+## Flatpak
 ## Add Flathub Repo
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
@@ -48,7 +49,6 @@ org.videolan.VLC \
 org.remmina.Remmina \
 org.gnome.Epiphany \
 org.telegram.desktop \
-om.leinardi.gwe \
 org.gabmus.hydrapaper \
 md.obsidian.Obsidian \
 com.github.tchx84.Flatseal \
@@ -60,17 +60,19 @@ de.haeckerfelix.Fragments \
 com.bitstower.Markets \
 org.gnome.World.PikaBackup \
 org.gnome.gitlab.YaLTeR.VideoTrimmer \
-com.uploadedlobster.peek -y
+com.uploadedlobster.peek \
+io.atom.Atom \
+org.mozilla.Thunderbird \
+ch.protonmail.protonmail-bridge -y
 
 ## to-do list (manual steps)
 echo > ~/Desktop/to-do.md "- [ ] dark mode
-- [ ] mount game drive on boot
 - [ ] sign into steam
-- [ ] configure game drive in steam
 - [ ] sign into bitwarden
 - [ ] sign into firefox
 - [ ] configure ungoogled chromium for Discord
 - [ ] syncthing documents sync
 - [ ] sign into obsidian
-- [ ] mount black and blue
-- [ ] enable WoWOL"
+- [ ] sign into github through atom
+- [ ] sign into protonmail and connect to Thunderbird
+- [ ] sign into protonvpn"
