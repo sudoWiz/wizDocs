@@ -4,9 +4,9 @@
 sudo dnf remove firefox -y
 sudo dnf update -y
 
-## Uncomment next 2 lines for Nvidia drivers
-#dnf install akmod-nvidia \
-#xorg-x11-drv-nvidia-cuda \
+### Nvidia drivers
+dnf install akmod-nvidia \
+xorg-x11-drv-nvidia-cuda \
 
 sudo dnf install \
 xrdp \
@@ -25,7 +25,10 @@ sudo chsh -s /usr/bin/fish
 sudo systemctl enable --now syncthing@USER.service
 
 ## pip3
-pip3 install --user gnome-extensions-cli
+pip3 install --user \
+gnome-extensions-cli \ # for managing and automating gnome shell extentions
+ansible \ # automation and infrastructure management
+bpytop # pretty system monitor
 
 ## Gnome Shell Extensions
 gnome-extensions-cli install 517 906 1262 1319 2087 2890
