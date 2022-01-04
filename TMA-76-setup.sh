@@ -86,8 +86,6 @@ ch.protonmail.protonmail-bridge -y
 echo > ~/Desktop/to-do.md "- [ ] dark mode
 - [ ] set keyboard shortcuts for terminal, browser, and files
 - [ ] sign into steam
-- [ ] mount game drive and configure auto-mount with Disks
-- [ ] mount Blue and Black the same way
 - [ ] sign into bitwarden
 - [ ] sign into firefox
 - [ ] configure ungoogled chromium for Discord
