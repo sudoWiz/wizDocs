@@ -19,6 +19,7 @@ sudo dnf update -y
 ## Git setup
 git config --global user.name "Wiz"
 git config --global user.email "wiz@privatewizard.com"
+git config pull.rebase false
 
 ### VSCodium
 sudo rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
