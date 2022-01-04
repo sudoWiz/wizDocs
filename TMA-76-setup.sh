@@ -3,21 +3,20 @@
 sudo hostname TMA-76
 
 ## RPM Fusion
-sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf groupupdate core
-sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-sudo dnf groupupdate sound-and-video
-sudo dnf install rpmfusion-free-release-tainted
-sudo dnf install libdvdcss
-sudo dnf install rpmfusion-nonfree-release-tainted
-sudo dnf install \*-firmware
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+sudo dnf groupupdate core -y
+sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
+sudo dnf groupupdate sound-and-video -y
+sudo dnf install rpmfusion-free-release-tainted -y
+sudo dnf install libdvdcss -y
+sudo dnf install rpmfusion-nonfree-release-tainted -y
+sudo dnf install \*-firmware -y
 
 ## DNF Packages
 sudo dnf remove firefox -y # removing to make way for flatpak version
 sudo dnf update -y
 
 ## Git setup
-git clone https://github.com/sudoWiz/wizDocs
 git config --global user.name "Wiz"
 git config --global user.email "wiz@privatewizard.com"
 
@@ -43,9 +42,9 @@ sudo systemctl enable --now syncthing@USER.service
 
 ## pip3
 pip3 install --user \
-gnome-extensions-cli \ # for managing and automating gnome shell extentions
-ansible \ # automation and infrastructure management
-bpytop # pretty system monitor
+gnome-extensions-cli \
+ansible \
+bpytop
 
 ## Gnome Shell Extensions
 gnome-extensions-cli install 517 906 1262 1319 2087 2890
@@ -98,4 +97,4 @@ echo > ~/Desktop/to-do.md "- [ ] dark mode
 - [ ] sign into obsidian, enable sync
 - [ ] sign into github for git control
 - [ ] sign into protonmail-bridge and connect to Thunderbird
-- [ ] sign into protonvpn
+- [ ] sign into protonvpn"
