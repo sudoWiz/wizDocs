@@ -12,6 +12,13 @@ sudo dnf install libdvdcss -y
 sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf install \*-firmware -y
 
+## System76
+dnf copr enable szydell/system76 -y
+sudo dnf install system76-dkms system76-power system76-driver system76-firmware firmware-manager system76-io-dkms system76-acpi-dkms -y
+sudo systemctl enable system76-power system76-power-wake system76-firmware-daemon
+sudo systemctl start system76-power system76-firmware-daemon
+systemctl enable --user com.system76.FirmwareManager.Notify.timer
+
 ## DNF Packages
 sudo dnf remove firefox -y # removing to make way for flatpak version
 sudo dnf update -y
@@ -27,6 +34,7 @@ printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbase
 sudo dnf install codium -y
 
 sudo dnf install \
+fortune-mod \
 gnome-tweaks \
 micro \
 neofetch \
@@ -96,4 +104,8 @@ echo > ~/Desktop/to-do.md "- [ ] dark mode
 - [ ] sign into obsidian, enable sync
 - [ ] sign into github for git control
 - [ ] sign into protonmail-bridge and connect to Thunderbird
-- [ ] sign into protonvpn"
+- [ ] sign into protonvpn
+- [ ] change fish greeting
+    - [ ] funced fish_greeting
+    - [ ] fortune
+    - [ ] funcsave fish_greeting"
