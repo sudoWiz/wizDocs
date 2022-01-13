@@ -13,7 +13,7 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf install \*-firmware -y
 
 ## System76
-dnf copr enable szydell/system76 -y
+sudo dnf copr enable szydell/system76 -y
 sudo dnf install system76-dkms system76-power system76-driver system76-firmware firmware-manager system76-io-dkms system76-acpi-dkms -y
 sudo systemctl enable system76-power system76-power-wake system76-firmware-daemon
 sudo systemctl start system76-power system76-firmware-daemon
